@@ -1,0 +1,1 @@
+export const NAV_LINKS: string[] = ['Home', 'Services', 'About', 'Contact'];
