@@ -30,6 +30,7 @@ body {
 
 .home-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -38,9 +39,9 @@ body {
   height: 100%
 }
 
+/* NAVBAR */
 @layer components {
 
-  /* NAVBAR */
   .nav-container {
     @apply 
     /* border-solid border-red-500 border-2 */
@@ -95,4 +96,52 @@ body {
     @apply text-blue-400 bg-white;
   }
 
+}
+
+/* HERO */
+@layer components {
+
+  .hero-container {
+    @apply 
+    /* border-solid border-red-500 border-2 */
+    flex flex-col justify-center items-center
+    w-full h-full relative
+    px-2 py-2;
+    background-image: url('/public/images/main-bg.jpg');
+    background-size: cover;
+  }
+
+  .hero-bg {
+    @apply 
+    /* border-solid border-orange-500 border-2 */
+    flex justify-center items-center
+    w-full h-full;
+  }
+
+
+}
+
+/* FOOTER */
+@layer components {
+
+  .footer-container {
+    @apply 
+    /* border-solid border-red-500 border-2 */
+    flex flex-col-reverse justify-center items-start
+    w-full h-fit
+    bg-[#00163D]
+    px-2 py-4
+    text-sm
+    gap-2;
+  }
+
+  .footer-box {
+    @apply 
+    border-solid border-orange-500 border-2
+    flex flex-col justify-center items-start
+    w-full h-fit;
+  }
+  
+
+  
 }

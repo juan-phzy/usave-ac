@@ -1,8 +1,16 @@
-import React from 'react'
-
+import Image from "next/image"
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className='hero-container'>
+      {/* <div className='hero-bg'>
+        <Image
+          className='object-contain'
+          src='/images/main-bg.jpg'
+          alt='hero-image'
+          fill
+        />
+      </div> */}
+    </section>
   )
 }
 
