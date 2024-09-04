@@ -2,14 +2,15 @@ import Image from "next/image"
 const Hero = () => {
   return (
     <section className='hero-container'>
-      {/* <div className='hero-bg'>
+      <div className='hero-bg'>
         <Image
-          className='object-contain'
+          className='object-cover'
           src='/images/main-bg.jpg'
           alt='hero-image'
           fill
         />
-      </div> */}
+        <div className="white-overlay"></div>
+      </div>
     </section>
   )
 }

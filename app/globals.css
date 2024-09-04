@@ -46,7 +46,7 @@ body {
     @apply 
     /* border-solid border-red-500 border-2 */
     flex justify-center items-center
-    w-full h-fit
+    w-full h-fit z-[-50]
     px-2 pt-5 pb-3;
     background: linear-gradient(to right, #0088FF
     , #003899
@@ -95,6 +95,14 @@ body {
   .active {
     @apply text-blue-400 bg-white;
   }
+  .nav-logo {
+    @apply 
+    /* border-solid border-red-500 border-2 */
+    absolute top-[0px] left-[-80px]
+    flex justify-center items-center
+    w-[220px] h-[110px] opacity-50
+    z-[-10];
+  }
 
 }
 
@@ -105,17 +113,22 @@ body {
     @apply 
     /* border-solid border-red-500 border-2 */
     flex flex-col justify-center items-center
-    w-full h-full relative
-    px-2 py-2;
-    background-image: url('/public/images/main-bg.jpg');
-    background-size: cover;
+    w-full h-full relative;
   }
 
   .hero-bg {
     @apply 
-    /* border-solid border-orange-500 border-2 */
+    /* border-solid border-orange-500 border-8 */
     flex justify-center items-center
-    w-full h-full;
+    w-full h-full relative;
+  }
+
+  .white-overlay {
+    @apply 
+    /* border-solid border-yellow-500 border-2 */
+    absolute top-0 left-0
+    w-full h-full
+    bg-white bg-opacity-50;
   }
 
 
@@ -132,14 +145,20 @@ body {
     bg-[#00163D]
     px-2 py-4
     text-sm
-    gap-2;
+    gap-2
+    
+    md:flex-row md:justify-between;
   }
 
   .footer-box {
     @apply 
     border-solid border-orange-500 border-2
     flex flex-col justify-center items-start
-    w-full h-fit;
+    w-full h-fit
+    
+    md:h-full
+    md:w-fit
+    md:pr-10;
   }
   
 
