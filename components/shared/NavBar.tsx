@@ -7,16 +7,11 @@ const NavBar = () => {
     <section className='nav-container'>
         <div className='nav-content'>
             <div className='nav-side-one'>
-                <span className="text-3xl font-extrabold leading-none">U-Save A/C</span>
-                <span 
-                    className="font-bold leading-none" 
-                    style={{
-                        fontSize: '1.455rem',
-                        lineHeight: '1rem'
-                    }}>
+                <span className="top-text">U-Save A/C</span>
+                <span className="middle-text">
                     <span className="text-red-500">& </span>Refrigeration
                 </span>
-                <span className="text-sm mt-2">Serving NJ and NY for over 30 years.</span>
+                <span className="bottom-text">Serving NJ and NY for over 30 years.</span>
                 <div className="nav-logo">
                     <Image 
                         className="object-contain"
@@ -27,7 +22,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className='nav-side-two'>
-                <div className='nav-number'>{`(973)-417-6092`}</div>
+                <div className='nav-number'>{`Call Now: (973)-417-6092`}</div>
                 <div className='nav-btns-container'>
                     {NAV_LINKS.map((link, index) => (
                         <a key={link} href={'/'} className={`nav-btn ${link === "Home" ? 'active' : ''}`}>{link}</a>

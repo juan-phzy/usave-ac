@@ -47,7 +47,9 @@ body {
     /* border-solid border-red-500 border-2 */
     flex justify-center items-center
     w-full h-fit z-[-50]
-    px-2 pt-5 pb-3;
+    px-2 pt-5 pb-3
+    
+    md:px-10;
     background: linear-gradient(to right, #0088FF
     , #003899
     );
@@ -57,7 +59,9 @@ body {
     /* border-solid border-orange-500 border-2 */
     flex flex-col justify-center items-center
     w-full h-fit
-    gap-2;
+    gap-2
+    
+    md:flex-row md:justify-between;
   }
 
   .nav-side-one {
@@ -67,42 +71,76 @@ body {
     ml-10
     flex flex-col justify-center items-start;
   }
-
-  .nav-side-two {
-    @apply 
-    /* border-solid border-green-500 border-2 */
-    flex flex-col justify-center items-center
-    w-fit
-    rounded-lg
-    bg-[#2598FF];
-  }
-  .nav-number {
-    @apply 
-    /* border-solid border-blue-500 border-2 */
-    hidden;
-  }
-  .nav-btns-container {
-    @apply 
-    /* border-solid border-indigo-500 border-2 */
-    flex justify-center items-center w-fit h-fit;
-  }
-  .nav-btn {
-    @apply 
-    /* border-solid border-violet-500 border-2 */
-    px-2 py-1 text-sm rounded-lg w-[80px]
-    flex justify-center items-center;
-  }
-  .active {
-    @apply text-blue-400 bg-white;
-  }
   .nav-logo {
     @apply 
     /* border-solid border-red-500 border-2 */
     absolute top-[0px] left-[-80px]
     flex justify-center items-center
     w-[220px] h-[110px] opacity-50
-    z-[-10];
+    z-[-10]
+    
+    md:left-[-60px];
   }
+  .top-text {
+    @apply 
+    text-3xl font-extrabold
+    md:text-4xl;
+    line-height: 1.9rem
+    ;
+  }
+  .middle-text {
+    @apply 
+    font-bold;
+    font-size: 1.455rem;
+    line-height: 1.2rem;
+  } 
+  @media (min-width: 768px) {
+    .middle-text {
+        font-size: 1.75rem;
+        line-height: 1.5rem;
+    }
+}
+  .bottom-text {
+    @apply 
+    text-sm mt-2
+    md:text-base
+    md:mt-1;
+  }
+
+
+  .nav-side-two {
+    @apply 
+    /* border-solid border-green-500 border-2 */
+    flex flex-col justify-center items-center
+    w-fit
+    rounded-lg;
+  }
+  .nav-number {
+    @apply 
+    border-solid border-blue-500 border-2
+    hidden
+    md:flex md:justify-center md:items-center md:self-end;
+  }
+  .nav-btns-container {
+    @apply 
+    /* border-solid border-indigo-500 border-2 */
+    flex justify-center items-center 
+    w-fit h-fit
+    rounded-lg
+    bg-[#2598FF];
+  }
+  .nav-btn {
+    @apply 
+    /* border-solid border-violet-500 border-2 */
+    px-2 py-1 text-sm rounded-lg w-[80px]
+    flex justify-center items-center
+    md:text-lg
+    md:w-[90px] lg:w-[120px];
+  }
+  .active {
+    @apply text-blue-400 bg-white;
+  }
+  
 
 }
 
@@ -152,7 +190,7 @@ body {
 
   .footer-box {
     @apply 
-    border-solid border-orange-500 border-2
+    /* border-solid border-orange-500 border-2 */
     flex flex-col justify-center items-start
     w-full h-fit
     
