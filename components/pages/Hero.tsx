@@ -11,6 +11,10 @@ const Hero = () => {
         />
         <div className="white-overlay"></div>
       </div>
+
+      <div className="hero-banner">
+
+      </div>
     </section>
   )
 }

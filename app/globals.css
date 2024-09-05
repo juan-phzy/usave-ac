@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border: 1px dotted red;
+  /* border: 1px dotted red; */
   width: 100%;
   height: 100%
 }
@@ -152,14 +152,15 @@ body {
     @apply 
     /* border-solid border-red-500 border-2 */
     flex flex-col justify-center items-center
-    w-full h-full relative;
+    w-full h-full relative px-5 py-10;
   }
 
   .hero-bg {
     @apply 
     /* border-solid border-orange-500 border-8 */
     flex justify-center items-center
-    w-full h-full relative;
+    absolute top-0 left-0 right-0 bottom-0
+    w-full h-full ;
   }
 
   .white-overlay {
@@ -169,6 +170,17 @@ body {
     w-full h-full
     bg-white bg-opacity-50;
   }
+
+  .hero-banner {
+    @apply 
+    /* border-solid border-green-500 border-2 */
+    flex flex-col justify-center items-center
+    bg-blue-500/80
+    w-full h-full
+    rounded-2xl
+    gap-5
+    z-10;
+  } 
 
 
 }
@@ -183,7 +195,7 @@ body {
     relative
     w-full h-fit
     bg-[#00163D]
-    px-2 py-4
+    px-5 py-4
     text-sm
     gap-2
     
