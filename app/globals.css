@@ -117,9 +117,10 @@ body {
   }
   .nav-number {
     @apply 
-    border-solid border-blue-500 border-2
+    /* border-solid border-blue-500 border-2 */
     hidden
-    md:flex md:justify-center md:items-center md:self-end;
+    md:flex md:justify-center md:items-center md:self-end
+    text-lg;
   }
   .nav-btns-container {
     @apply 
@@ -179,6 +180,7 @@ body {
     @apply 
     /* border-solid border-red-500 border-2 */
     flex flex-col-reverse justify-center items-start
+    relative
     w-full h-fit
     bg-[#00163D]
     px-2 py-4
@@ -193,12 +195,19 @@ body {
     /* border-solid border-orange-500 border-2 */
     flex flex-col justify-center items-start
     w-full h-fit
-    
+    relative
     md:h-full
     md:w-fit
     md:pr-10;
   }
   
-
+  .footer-line {
+    @apply 
+    absolute bottom-0 left-0 right-0
+    w-full h-[8px];
+    background: linear-gradient(to left, #0088FF
+    , #003899
+    );
+  }
   
 }

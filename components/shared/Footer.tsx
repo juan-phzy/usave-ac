@@ -11,6 +11,8 @@ const Footer = () => {
         <div>Email: usavehvacr@gmail.com</div>
         <div>Phone: (973)-417-6092</div>
       </div>
+
+      <div className="footer-line"></div>
     </section>
   )
 }
