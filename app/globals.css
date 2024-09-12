@@ -191,6 +191,7 @@ body {
     relative
     gap-1
     
+    md:gap-2 lg:gap-5
     md:items-start
     md:rounded-l-none 
     md:max-w-none 
