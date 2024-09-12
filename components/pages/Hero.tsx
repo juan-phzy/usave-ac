@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="white-overlay"></div>
       </div>
 
-      <div className="hero-banner">
-        <div className="banner-img">
+      <div className="banner-container">
+        <div className="banner-img-outer">
           <Image
             className='object-contain'
             src='/images/vectorguy.png'
@@ -21,9 +21,19 @@ const Hero = () => {
             fill
           />
         </div>
-        <div className="banner-title">Installation, Repair & Maintenance </div>
-        <div className="banner-desc">On ALL brands of heating, air conditioning, and refrigeration systems.</div>
-        <button className="btn-light"><a href="/">Request Service</a></button>
+        <div className="hero-banner">
+          <div className="banner-img">
+            <Image
+              className='object-contain'
+              src='/images/vectorguy.png'
+              alt='hero-image'
+              fill
+            />
+          </div>
+          <div className="banner-title">Installation, Repair & Maintenance </div>
+          <div className="banner-desc">On ALL brands of heating, air conditioning, and refrigeration systems.</div>
+          <button className="btn-light"><a href="/">Request Service</a></button>
+        </div>
       </div>
     </section>
   )
