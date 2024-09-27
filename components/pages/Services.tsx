@@ -1,7 +1,8 @@
 "use client"
 
+
 import Image from "next/image"
-const Hero = () => {
+const Services = () => {
   return (
     <section className='hero-container'>
       <div className='hero-bg'>
@@ -41,4 +42,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Services

@@ -46,7 +46,7 @@ body {
     @apply 
     /* border-solid border-red-500 border-2 */
     flex justify-center items-center
-    w-full h-fit z-[-50]
+    w-full h-fit
     px-2 pt-5 pb-3
     
     md:px-10;
@@ -296,7 +296,7 @@ body {
     @apply 
     border-solid border-[#0088FF] border-2
     flex justify-center items-center
-    px-2 py-1 text-sm rounded-lg
+    px-5 py-1 text-sm rounded-lg
     w-fit h-fit
     bg-white
     md:text-lg
